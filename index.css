@@ -1,0 +1,701 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #eeeff1;
+  font-family: "Poppins", sans-serif;
+}
+
+.navbar {
+  list-style-type: none;
+  margin: 0;
+  padding: 10px;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+li {
+  float: left;
+}
+
+.name {
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 25px;
+  font-family: inherit;
+}
+
+li a {
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  margin-left: 5px;
+  margin-right: 5px;
+  font-size: large;
+}
+
+li a:hover:not(.active) {
+  background-color: lightgrey;
+  border-radius: 10px;
+}
+
+.active {
+  background-color: black;
+  color: white;
+  border-radius: 10px;
+}
+
+.about {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  margin: auto;
+  margin-top: 5rem;
+}
+
+.about > div {
+  padding: 1rem 1.2rem;
+  flex-direction: column;
+}
+
+.about-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.about-heading {
+  font-size: 5rem;
+  color: #1a1b1f;
+}
+
+.about-paragraph {
+  font-size: 1.56rem;
+  line-height: 2.2rem;
+  color: #000000;
+}
+
+.about-image {
+  border-radius: 10px;
+}
+
+.testimonial {
+  display: flex;
+  flex-direction: column;
+  margin-top: 5rem;
+  padding-bottom: 1rem;
+}
+.testimonial > div {
+  padding: 1rem;
+}
+.testimonial-heading {
+  font-size: 2.75rem;
+  color: #1a1b1f;
+  text-align: center;
+}
+
+.testimonial-content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-align-last: center;
+}
+
+.testimonial-person {
+  width: 100%;
+}
+
+.testimonial-name {
+  font-size: 1.25rem;
+  color: black;
+  font-weight: 700;
+}
+
+.testimonial-image-person {
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+}
+
+.testimonial-paragraph {
+  font-size: 1.25rem;
+  line-height: 2rem;
+  padding-left: 3.5rem;
+  color: #000000;
+  margin-top: inherit;
+}
+
+.career {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+}
+
+.careerWrapper {
+  display: flex;
+  width: 100%;
+  /* border-style: solid;
+  border-color: red; */
+  justify-content: center;
+  margin-top: 200px;
+  margin-bottom: 200px;
+}
+
+.careerMain {
+  width: 600px;
+  padding: 40px;
+}
+
+.careerHeading {
+  font-size: 40px;
+}
+
+.careerInfo {
+  margin-top: 15px;
+  line-height: 1.7rem;
+  color: gray;
+}
+
+.careerBlocks > div {
+  border-style: solid;
+  border-width: 1px;
+  border-color: gray;
+  margin: 5px;
+  padding: 10px;
+  border-radius: 5px;
+  width: max-content;
+}
+
+.careerBlocks {
+  display: flex;
+  flex-wrap: wrap;
+  /* border-style: solid;
+  border-color: green; */
+  width: 500px;
+  /* margin-left: 80px; */
+}
+
+.contactWrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.contact {
+  display: flex;
+  border-style: solid;
+  border-radius: 30px;
+  border-color: gray;
+  border-width: 1px;
+  width: 100%;
+  padding: 90px;
+  margin: 200px 30px 200px 30px;
+}
+
+.contactHeading {
+  font-size: 80px;
+  width: 100%;
+  padding-right: 25px;
+}
+
+.infoFirst {
+  display: flex;
+}
+.infoSecond {
+  color: gray;
+  margin: 25px 0px 25px 0px;
+}
+
+.messageInput {
+  height: 150px;
+  padding: 12px 20px;
+  border-radius: 4px;
+  background-color: #f8f8f8;
+  width: 100%;
+  border-radius: 10px;
+  margin-top: 15px;
+  border: none;
+  font-size: 20px;
+}
+
+.infoName {
+  color: gray;
+  font-size: 20px;
+}
+.infoEmail {
+  color: gray;
+  margin-left: 20px;
+  font-size: 20px;
+}
+.box {
+  display: flex;
+  flex-grow: 1;
+}
+.input1 {
+  padding: 20px;
+  margin: 10px 0px 10px 0px;
+  border-radius: 10px;
+  font-size: 20px;
+  background-color: #f8f8f8;
+  border: none;
+}
+.input2 {
+  padding: 20px;
+  margin: 10px 0px 10px 0px;
+  border-radius: 10px;
+  font-size: 20px;
+  background-color: #f8f8f8;
+  border: none;
+}
+.infoButton {
+  color: white;
+  border: 1px;
+  background-color: black;
+  border-radius: 10px;
+  padding: 16px 25px 12px 25px;
+  text-align: center;
+}
+.footerBox {
+  display: flex;
+  flex-grow: 1;
+}
+.footer {
+  display: flex;
+  width: 1300px;
+  margin: 100px 50px 50px 50px;
+}
+.footerBottom {
+  display: flex;
+}
+.footerBottom > div {
+  color: gray;
+  font-size: 20px;
+  margin: 0px 20px 0px 20px;
+}
+.footerWrapper {
+  display: flex;
+  justify-content: center;
+}
+.copyright {
+  display: flex;
+  justify-content: center;
+  color: gray;
+  font-size: 15px;
+  margin: 10px 0px 50px 0px;
+}
+.downbar {
+  list-style-type: none;
+  margin: 0;
+  padding: 10px;
+  overflow: hidden;
+  top: 0;
+  width: 100%;
+}
+
+@media only screen and (min-width: 1441px){
+  .about {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: auto;
+    margin-top: 5rem;
+    width: 1200px;
+  }
+  
+  .about > div {
+    padding: 1rem 1.2rem;
+  }
+  
+  .about-content {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .about-heading {
+    font-size: 5rem;
+    color: #1a1b1f;
+  }
+  
+  .about-paragraph {
+    font-size: 1.56rem;
+    line-height: 2.2rem;
+    color: gray;
+  }
+  
+  .about-image {
+    border-radius: 10px;
+  }
+
+  .testimonial {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    margin-top: 5rem;
+    width: 1200px;
+  }
+  .testimonial > div {
+    padding: 1rem;
+  }
+  .testimonial-heading {
+    font-size: 2.75rem;
+    color: #1a1b1f;
+  }
+  
+  .testimonial-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  
+  .testimonial-person {
+    width: 100%;
+  }
+  
+  .testimonial-person > div {
+    padding-top: 0.8rem;
+  }
+  
+  .testimonial-name {
+    font-size: 1.25rem;
+    color: black;
+    font-weight: 700;
+  }
+  
+  .testimonial-image-person {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+  }
+  
+  .testimonial-paragraph {
+    font-size: 1.25rem;
+    line-height: 2rem;
+    padding-left: 3.5rem;
+    color: gray;
+  }
+
+  .career {
+    display: flex;
+    align-items: center;
+    justify-content:center;
+  }
+  .careerWrapper {
+    display: flex;
+    width: 100%;
+    /* border-style: solid;
+    border-color: red; */
+    justify-content: center;
+    margin-top: 200px;
+    margin-bottom: 200px;
+  }
+  .careerMain {
+    width: 550px;
+  }
+  .careerHeading {
+    font-size: 40px;
+  }
+  .careerInfo {
+    margin-top: 15px;
+    line-height: 1.7rem;
+    color: gray;
+  }
+  .careerBlocks > div {
+    border-style: solid;
+    border-width: 1px;
+    border-color: gray;
+    margin: 5px;
+    padding: 10px;
+    border-radius: 5px;
+  }
+  .careerBlocks {
+    display: flex;
+    flex-wrap: wrap;
+    /* border-style: solid;
+    border-color: green; */
+    width: 500px;
+    margin-left: 80px;
+  }
+
+  .contactWrapper {
+    display: flex;
+    justify-content: center;
+  }
+  .contact {
+    display: flex;
+    border-style: solid;
+    border-radius: 10px;
+    border-color: gray;
+    border-width: 1px;
+    width: 1300px;
+    padding: 100px 60px 100px 60px;
+    margin: 200px 0px 200px 0px;
+  }
+  .contactHeading {
+    font-size: 80px;
+    width: 800px;
+  }
+  
+  .infoFirst {
+    display: flex;
+  }
+  .infoSecond {
+    margin: 25px 0px 25px 0px;
+  }
+  
+  .messageInput {
+    height: 150px;
+    padding: 12px 20px;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    width: 100%;
+    border-radius: 10px;
+    margin-top: 15px;
+    border: none;
+  }
+  
+  .infoName {
+    color: gray;
+    font-size: 20px;
+  }
+  .infoEmail {
+    color: gray;
+    margin-left: 20px;
+    font-size: 20px;
+  }
+  .box {
+    display: flex;
+    flex-grow: 1;
+  }
+  .input1 {
+    padding: 20px;
+    margin: 10px 0px 10px 0px;
+    border-radius: 10px;
+    font-size: 20px;
+    background-color: #f8f8f8;
+    border: none;
+  }
+  .input2 {
+    padding: 20px;
+    margin: 10px 0px 10px 0px;
+    border-radius: 10px;
+    font-size: 20px;
+    background-color: #f8f8f8;
+    border: none;
+  }
+  .infoButton {
+    color: white;
+    border: 1px;
+    cursor: pointer;
+    background-color: black;
+    border-radius: 10px;
+    padding: 16px 25px 12px 25px;
+    text-align: center;
+  }
+  .footerBox {
+    display: flex;
+    flex-grow: 1;
+  }
+  .footer {
+    display: flex;
+    width: 1300px;
+    margin: 100px 50px 50px 50px;
+  }
+  .footerBottom {
+    display: flex;
+  }
+  .footerBottom > a {
+    color: gray;
+    font-size: 20px;
+    margin: 0px 20px 0px 20px;
+    cursor: pointer;
+  }
+  .footerWrapper {
+    display: flex;
+    justify-content: center;
+  }
+  .copyright {
+    display: flex;
+    justify-content: center;
+    color: gray;
+    font-size: 15px;
+    margin: 10px 0px 50px 0px;
+  }
+
+}
+
+@media only screen and (min-width: 901px) and (max-width: 1040px) {
+  .contact {
+    margin: 200px 40px 200px 40px;
+    padding: 60px;
+  }
+  .input1 {
+    width: 255px;
+  }
+  .input2 {
+    width: 225px;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .name {
+    font-size: 20px;
+  }
+
+  li a {
+    font-size: medium;
+  }
+
+  .about {
+    flex-direction: column;
+    padding-top: 1rem;
+  }
+  .about-heading {
+    font-size: 4rem;
+    text-align: center;
+  }
+  .about-image img {
+    max-width: 400px;
+  }
+  .about-paragraph {
+    font-size: 1.3rem;
+    line-height: 2rem;
+    max-width: max-content;
+    text-align-last: center;
+  }
+  .testimonial-content {
+    align-items: center;
+    flex-direction: column;
+    margin-top: 10px;
+  }
+  .testimonial-paragraph {
+    max-width: max-content;
+    padding: 2rem;
+  }
+  .testimonial > div {
+    padding: 0.5rem;
+  }
+  .career {
+    flex-direction: column;
+  }
+
+  .careerInfo {
+    max-width: max-content;
+    font-size: 1.25rem;
+  }
+  .careerBlocks {
+    font-size: 0.95rem;
+  }
+  .contact {
+    flex-direction: column;
+    padding: 60px 90px 70px 90px;
+  }
+  .contactHeading {
+    padding-bottom: 25px;
+    font-size: 65px;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  input {
+    resize: horizontal;
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  .contactHeading {
+    font-size: 40px;
+  }
+  .contact {
+    padding: 50px;
+  }
+  .infoName {
+    font-size: 18px;
+  }
+  .infoEmail {
+    font-size: 18px;
+  }
+  .infoFirst {
+    flex-direction: column;
+  }
+  .infoSecond {
+    font-size: 18px;
+  }
+  .infoEmail {
+    margin-left: 0px;
+  }
+  .input1 {
+    padding: 18px;
+    margin: 10px 0px 10px 0px;
+    font-size: 18px;
+  }
+  .input2 {
+    padding: 18px;
+    margin: 10px 0px 10px 0px;
+    font-size: 18px;
+  }
+  .messageInput {
+    height: 110px;
+    padding: 12px 20px;
+    width: 100%;
+    margin-top: 15px;
+    font-size: 18px;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .careerMain {
+    padding: 20px;
+    width: -webkit-fill-available;
+  }
+  .career {
+    justify-content: center;
+    margin: 10px;
+  }
+  .careerHeading {
+    font-size: 30px;
+  }
+  .careerInfo {
+    font-size: 1rem;
+  }
+  .careerBlocks {
+    font-size: 0.7rem;
+    width: initial;
+  }
+  .contactHeading {
+    font-size: 30px;
+  }
+  .contact {
+    padding: 40px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .name {
+    font-size: 15px;
+  }
+
+  li a {
+    font-size: small;
+  }
+  .about-image img {
+    max-width: 300px;
+  }
+  .about-heading {
+    font-size: 2.5rem;
+  }
+  .testimonial-heading {
+    font-size: 2rem;
+  }
+  .testimonial-paragraph {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+}
